@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_responsive_builder/the_responsive_builder.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,8 +27,8 @@ class _HomePageState extends State<HomePage> {
             ),
             child: SafeArea(
               child: Padding(
-                padding:
-                const EdgeInsets.symmetric(horizontal: 25, vertical: 20),
+                padding: EdgeInsets.symmetric(
+                    horizontal: 6.361.w, vertical: 2.475.h),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -41,9 +42,9 @@ class _HomePageState extends State<HomePage> {
                         Row(
                           children: [
                             Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 15,
-                                vertical: 5,
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 3.817.w,
+                                vertical: 0.619.h,
                               ),
                               decoration: BoxDecoration(
                                 color: const Color(0xff44f1a6),
@@ -51,14 +52,14 @@ class _HomePageState extends State<HomePage> {
                               ),
                               child: Image.asset(
                                 'assets/images/seeds.png',
-                                height: 40,
+                                height: 4.950.h,
                               ),
                             ),
-                            const SizedBox(width: 10),
-                            const Text(
+                            SizedBox(width: 2.545.w),
+                            Text(
                               'Buy\nseeds',
                               style: TextStyle(
-                                fontSize: 17,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.bold,
                                 height: 1.2,
                               ),
@@ -67,30 +68,31 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 40),
-                    const Text(
+                    SizedBox(height: 3.h),
+                    Text(
                       'Sansevieria',
                       style: TextStyle(
-                        fontSize: 33,
+                        fontSize: 33.sp,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const Text(
+                    Text(
                       'Autoflower',
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 18.sp,
                         fontWeight: FontWeight.bold,
                         color: Colors.black38,
                       ),
                     ),
-                    const SizedBox(height: 40),
-                    const Padding(
+                    SizedBox(height: 4.950.h),
+                  Padding(
                       padding:
-                      EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                          EdgeInsets.symmetric(horizontal: 7.634.w, vertical: 1.238
+                          .h),
                       child: Text(
                         'Hybrid',
                         style: TextStyle(
-                          fontSize: 15,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -99,16 +101,18 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Icon(
                           Icons.fiber_manual_record,
-                          size: 14,
+                          size: 14.sp,
                           color: Colors.black26,
                         ),
-                        SizedBox(width: 30),
+                        SizedBox(width: 7.634
+                        .w),
                         Icon(
                           Icons.fiber_manual_record,
                           size: 16,
                           color: Colors.black,
                         ),
-                        SizedBox(width: 30),
+                        SizedBox(width: 7.634
+                            .w),
                         Icon(
                           Icons.fiber_manual_record,
                           size: 14,
@@ -116,57 +120,66 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 30),
+               SizedBox(height: 3.713
+               .h),
                     lightText(text: 'Yield'),
                     boldText(text: '± 450 gr'),
-                    const SizedBox(height: 25),
+                     SizedBox(height: 3.094
+                    .h),
                     lightText(text: 'THC'),
                     boldText(text: '14 %'),
-                    const SizedBox(height: 25),
+                    SizedBox(height: 3.094
+                        .h),
                     lightText(text: 'CBD'),
                     boldText(text: '0.2 %'),
-                    const SizedBox(height: 25),
+                    SizedBox(height: 3.094
+                        .h),
                     lightText(text: 'Flowering'),
                     boldText(text: '6-8 weeks'),
-                    const SizedBox(height: 30),
+                    SizedBox(height: 3.713
+                        .h),
                     boldText(text: 'Learn more'),
                     Container(
-                      height: 5,
-                      width: 50,
+                      height: 0.619
+                      .h,
+                      width: 12.723
+                      .w,
                       color: const Color(0xff44f1a6),
                     ),
-
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                         Row(
+                        Row(
                           children: [
                             Icon(
                               Icons.unfold_more,
                               size: 20,
                             ),
-                            SizedBox(width: 10),
+                            SizedBox(width: 2.545
+                            .w),
                             Text(
                               'Compare',
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 18.sp,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                           ],
                         ),
                         Container(
-                          height: 80,
-                          width: 180,
+                          height: 9.901
+                          .h,
+                          width: 45.802
+                          .w,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(50),
                           ),
-                          child: const Center(
+                          child: Center(
                             child: Text(
                               'Next',
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 18.sp,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -180,11 +193,15 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           Positioned(
-            right: -180,
-            bottom: 150,
+            right: -45.802
+            .w,
+            bottom: 18.564
+            .h,
             child: Container(
-              height: 400,
-              width: 400,
+              height: 49.505
+              .h,
+              width: 101.781
+              .w,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 gradient: LinearGradient(
@@ -199,15 +216,16 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           Positioned(
-            right: -260,
-            bottom: 20,
+            right: -66.158
+            .w,
+            bottom: 2.475
+            .h,
             child: ClipOval(
               clipper: BottomCircularClipper(),
               child: Image.asset(
                 'assets/images/plant.png',
                 scale: 0.75,
               ),
-
             ),
           ),
         ],
@@ -218,8 +236,8 @@ class _HomePageState extends State<HomePage> {
   Text boldText({required String text}) {
     return Text(
       text,
-      style: const TextStyle(
-        fontSize: 22,
+      style:  TextStyle(
+        fontSize: 22.sp,
         fontWeight: FontWeight.bold,
       ),
     );
@@ -228,22 +246,19 @@ class _HomePageState extends State<HomePage> {
   Text lightText({required String text}) {
     return Text(
       text,
-      style: const TextStyle(
+      style:  TextStyle(
         fontWeight: FontWeight.bold,
-        fontSize: 14,
+        fontSize: 14.sp,
         color: Colors.black26,
       ),
     );
   }
 }
 
-
-
 class BottomCircularClipper extends CustomClipper<Rect> {
   @override
   Rect getClip(Size size) {
-    return Rect.fromLTRB(140, -20, size.width,
-        size.height * 0.805); //
+    return Rect.fromLTRB(140, -20, size.width, size.height * 0.805); //
   }
 
   @override

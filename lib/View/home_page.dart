@@ -237,20 +237,13 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-// The custom clipper will clip the image from the bottom 130 pixels
-// We are using -20 pixels for not clipping the image
 
-// Now let's add the top bar
-
-// Now the top bar has finished
-
-// Let's create the body of the UI
 
 class BottomCircularClipper extends CustomClipper<Rect> {
   @override
   Rect getClip(Size size) {
     return Rect.fromLTRB(140, -20, size.width,
-        size.height * 0.805); // Adjust the height percentage as needed
+        size.height * 0.805); //
   }
 
   @override
